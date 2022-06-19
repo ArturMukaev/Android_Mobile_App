@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#C6C6C6">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="175dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="#673AB7"
+                android:text="Task Name"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:backgroundTint="#6E37BE"
+                app:srcCompat="?attr/actionModeCutDrawable"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="300dp"
+            android:layout_height="59dp"
+            android:background="#FFFFFF"
+            android:text="Description"
+            android:textColor="#3C3C3C" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#707070"
+            android:text="TextView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="150dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:text="Статус"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:text="Ф.И."
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/hours"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text=""
+                android:layout_weight="1"
+                android:background="#FDFDFD"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
